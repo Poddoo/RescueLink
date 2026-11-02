@@ -1,62 +1,169 @@
-# RescueLink ওয়েবসাইট
+# RescueLink — Website
 
-RescueLink মোবাইল অ্যাপের পরিচিতির জন্য একটি বাংলা ভাষার ল্যান্ডিং ওয়েবসাইট।
-শুধু HTML5, CSS3 ও vanilla JavaScript — কোনো বিল্ড টুল বা লাইব্রেরি লাগে না।
+A responsive landing website introducing **RescueLink**, a mobile application designed to provide emergency assistance information, safety resources, and essential support services.
 
-## ফাইল কাঠামো
+The website presents the application's features, interface previews, and project information through a clean, accessible, and bilingual user experience.
 
-```
+## Overview
+
+RescueLink Website serves as the official introductory platform for the RescueLink mobile application. It provides visitors with an overview of the application's purpose, key features, available services, and interface.
+
+The website supports both Bengali and English, allowing users to explore the platform in their preferred language.
+
+## Features
+
+- **Responsive Design:** Optimized for desktop, tablet, and mobile devices.
+- **Bilingual Interface:** Supports Bengali and English with persistent language preferences.
+- **Application Preview:** Showcases screenshots of the RescueLink mobile application.
+- **Interactive Navigation:** Includes mobile navigation and active section highlighting.
+- **Scroll Animations:** Provides smooth reveal effects while navigating the page.
+- **Contact Section:** Allows visitors to compose inquiries through their default email application.
+- **Lightweight Implementation:** Built without external JavaScript frameworks or build tools.
+
+## Technology Stack
+
+| Technology | Purpose |
+|---|---|
+| HTML5 | Page structure and semantic content |
+| CSS3 | Styling, responsive layouts, and animations |
+| Vanilla JavaScript | Interactive functionality and language management |
+| Inline SVG | Interface icons and vector graphics |
+| Google Fonts | Hind Siliguri typography |
+
+## Project Structure
+
+```text
 RescueLink/
-├── index.html        পুরো পেজের কাঠামো (সব লেখা বাংলায়)
-├── style.css         সব স্টাইল, রেসপনসিভ নিয়ম ও অ্যানিমেশন
-├── script.js         মোবাইল মেনু, সক্রিয় লিংক, স্ক্রল রিভিল, গ্যালারি
+├── index.html
+├── style.css
+├── script.js
 ├── assets/
 │   ├── images/
-│   │   ├── logo.png          নেভবার ও ফুটারের লোগো (শিল্ড চিহ্ন, স্বচ্ছ ব্যাকগ্রাউন্ড)
-│   │   ├── logo-full.png     পূর্ণ লোগো (শেয়ার প্রিভিউয়ে ব্যবহৃত)
-│   │   ├── favicon.png       ফেভিকন
-│   │   ├── hero-app.png      হিরো সেকশনের ফোনের স্ক্রিন
-│   │   ├── app-home.jpeg     হোম স্ক্রিন
-│   │   ├── app-sos.jpeg      জরুরি SOS স্ক্রিন
-│   │   ├── app-map.jpeg      মানচিত্র ও অবস্থান
-│   │   ├── app-shelters.jpeg কাছাকাছি আশ্রয়কেন্দ্র
-│   │   ├── app-services.jpeg জরুরি সেবার তথ্য
-│   │   └── app-profile.jpeg  প্রোফাইল ও সেটিংস
-│   └── icons/                (ফাঁকা; আইকনগুলো index.html-এ ইনলাইন SVG হিসেবে আছে)
+│   │   ├── logo.png
+│   │   ├── logo-full.png
+│   │   ├── favicon.png
+│   │   ├── hero-app.png
+│   │   ├── app-home.jpeg
+│   │   ├── app-sos.jpeg
+│   │   ├── app-map.jpeg
+│   │   ├── app-shelters.jpeg
+│   │   ├── app-services.jpeg
+│   │   └── app-profile.jpeg
+│   └── icons/
 └── README.md
 ```
 
-## চালানোর নিয়ম
+## Getting Started
 
-`index.html` ফাইলটি যেকোনো আধুনিক ব্রাউজারে খুলুন। কোনো বিল্ড বা সার্ভার লাগবে না।
-Hind Siliguri ফন্ট Google Fonts থেকে লোড হয়, তাই ফন্ট দেখতে ইন্টারনেট সংযোগ দরকার।
+### Prerequisites
 
-## আসল অ্যাপ স্ক্রিনশট বসানোর নিয়ম
+- A modern web browser.
+- An internet connection for loading Google Fonts.
 
-`assets/images/`-এর `app-*.png` ও `hero-app.png` বর্তমানে **নমুনা স্ক্রিন**, আসল অ্যাপের স্ক্রিনশট নয়।
-আসল স্ক্রিনশট থাকলে একই নামে ফাইলগুলো বদলে দিন — কোড বদলাতে হবে না।
+### Installation and Execution
 
-- ছবির অনুপাত রাখুন প্রায় ৯ : ১৯.২ (যেমন ১২৪২ × ২৬৫৬ পিক্সেল)। ফোনের ফ্রেম নিজে থেকে বসে যাবে, স্ক্রিনশটে ফ্রেম যোগ করবেন না।
-- `hero-app.png` সাধারণত `app-home.png`-এর কপি।
-- নমুনা-সংক্রান্ত লেখাটি (`এখানে দেখানো স্ক্রিনগুলো নমুনা প্রদর্শনী…`) আসল স্ক্রিনশট বসানোর পর `index.html`-এর অ্যাপের ঝলক সেকশন থেকে সরিয়ে দিন।
-- প্রতিটি ছবির বিবরণ (alt) `index.html`-এর `data-alt` অ্যাট্রিবিউটে আছে; ছবি বদলালে বিবরণও মিলিয়ে নিন।
+1. Clone the repository:
 
-## লোগো
+   ```bash
+   git clone <repository-url>
+   ```
 
-`logo.png` ও `logo-full.png` প্রকল্পের দেওয়া লোগো থেকে তৈরি। SVG সংস্করণ থাকলে `assets/images/logo.svg` হিসেবে রেখে `index.html`-এ `logo.png` পথগুলো বদলে নিন।
+2. Navigate to the project directory:
 
-## যোগাযোগের তথ্য
+   ```bash
+   cd RescueLink
+   ```
 
-যোগাযোগ সেকশনে নমুনা ইমেইল `hello@rescuelink.example` আছে। প্রকাশের আগে আসল ঠিকানা দিয়ে বদলে নিন — `index.html`-এ `hello@rescuelink.example` খুঁজে সব জায়গায় (যোগাযোগ কার্ড, ফর্মের `data-email`, ফুটার) বদলান। ফর্মটি ব্যবহারকারীর ইমেইল অ্যাপে বার্তা তৈরি করে; সার্ভারে কিছু পাঠায় না।
+3. Open `index.html` in your preferred web browser.
 
-## ফিচার ও দাবি
+No dependency installation, build process, or development server is required.
 
-ফিচারের বিবরণ অ্যাপের পরিকল্পিত সুবিধা অনুযায়ী লেখা। কোনো ফিচার এখনো তৈরি না হয়ে থাকলে সংশ্লিষ্ট কার্ড ও স্ক্রিন সম্পাদনা করুন। ওয়েবসাইটটি কোনো জরুরি সংকেত পাঠায় না, অবস্থান চায় না এবং কর্তৃপক্ষের কাছে সংকেত পৌঁছানোর কোনো দাবি করে না।
+## Application Screenshots
 
+The website includes visual previews of the RescueLink mobile application.
 
-## ভাষা (বাংলা / English)
+| Asset | Description |
+|---|---|
+| `app-home.jpeg` | Application home screen |
+| `app-sos.jpeg` | Emergency SOS interface |
+| `app-map.jpeg` | Map and location interface |
+| `app-shelters.jpeg` | Nearby shelter information |
+| `app-services.jpeg` | Emergency services information |
+| `app-profile.jpeg` | User profile and settings |
 
-- নেভিগেশন বারের টগল দিয়ে বাংলা ও English বদলানো যায়। ডিফল্ট ভাষা বাংলা; বেছে নেওয়া ভাষা ব্রাউজারে মনে থাকে।
-- বাংলা টেক্সট `index.html`-এ আগের মতোই আছে। ইংরেজি অনুবাদ `script.js`-এর শুরুর দিকের `I18N` তালিকায় আছে (বাংলা বাক্য → ইংরেজি বাক্য)।
-- `index.html`-এ কোনো বাংলা টেক্সট বদলালে `I18N`-এ সেই বাংলা বাক্যটিও একইভাবে বদলাতে হবে; নইলে ইংরেজিতে ওই অংশ বাংলাই থাকবে।
-- নতুন টেক্সট যোগ করলে `I18N`-এ তার ইংরেজি যোগ করুন। ফর্মের ত্রুটি-বার্তা ও স্ট্যাটাসও এই তালিকা থেকেই অনুবাদ হয়।
+### Image Guidelines
+
+- Maintain an approximate aspect ratio of 9:19.2 (e.g., 1242 × 2656 pixels).
+- Do not include additional phone frames in screenshots; the website provides its own presentation frame.
+- `hero-app.png` generally uses a copy of the home screen image.
+- Update the corresponding `data-alt` descriptions in `index.html` whenever screenshots are replaced.
+- Remove sample-preview notices from the application preview section when actual screenshots are used.
+
+## Language Configuration
+
+The website supports Bengali and English.
+
+- Bengali is the default language.
+- Users can switch languages through the navigation bar.
+- Language preferences are stored in the browser using local storage.
+- Bengali content is maintained in `index.html`.
+- English translations are maintained in the `I18N` mapping at the beginning of `script.js`.
+
+**Translation Maintenance:** Whenever Bengali content is modified in `index.html`, its corresponding entry in the `I18N` mapping must be updated to ensure accurate English translations. All newly added text, form validation messages, and status messages should also include their English translations.
+
+## Branding and Assets
+
+The following image assets are used throughout the website:
+
+| File | Usage |
+|---|---|
+| `logo.png` | Navigation bar and footer |
+| `logo-full.png` | Social sharing previews |
+| `favicon.png` | Browser tab icon |
+| `hero-app.png` | Hero section application preview |
+
+If an SVG version of the logo is available, it may be placed in `assets/images/logo.svg`, with the corresponding image references updated in `index.html`.
+
+## Contact Configuration
+
+The website currently uses the placeholder email address:
+
+`hello@rescuelink.example`
+
+Before deployment, replace this address with the official project email in all relevant locations within `index.html`, including:
+
+- Contact information section
+- Contact form's `data-email` attribute
+- Footer
+
+The contact form generates an email through the visitor's default email application. It does not submit messages to a backend server or store user information.
+
+## Limitations and Disclaimer
+
+- The website is an informational platform introducing the RescueLink mobile application.
+- Feature descriptions represent the application's planned or implemented capabilities and should be kept consistent with the actual development status.
+- The website itself does not transmit emergency alerts or request access to visitors' locations.
+- It does not provide direct emergency communication with authorities.
+- Application screenshots and feature descriptions should accurately represent the current state of the mobile application.
+
+## Course and Team Attribution
+
+**Academic Information**
+
+| Field | Details |
+|---|---|
+| Course | CSE 416 — Software Project Design and Development |
+| Institution | University of Information Technology and Sciences (UITS) |
+| Department | Computer Science and Engineering |
+| Supervisor | Dr. Mahfida Amjad Dipa |
+
+**Project Team**
+
+| Role | Name |
+|---|---|
+| Project Lead & Full-Stack Developer | Rowshon Jahan Poddo |
+| Collaborator | Abdur Rahman Jayed |
+
+---
+
+*RescueLink — Connecting people with emergency assistance and essential safety information.*
